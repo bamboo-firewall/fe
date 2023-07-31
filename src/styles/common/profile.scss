@@ -1,0 +1,81 @@
+.section-profile-cover {
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.section-shaped {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-shaped .shape-style-1.shape-default {
+  background: linear-gradient(150deg, $blue-1 15%, $blue-2 70%, $blue-3 94%);
+}
+
+.section-shaped .shape {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-shaped .shape-style-1 :first-child {
+  left: -4%;
+  bottom: auto;
+  background: hsl(0deg 0% 100% / 10%);
+}
+
+.section-shaped .shape-style-1 :nth-child(2) {
+  right: 4%;
+  top: 10%;
+  background: hsl(0deg 0% 100% / 10%);
+}
+
+.section-shaped .shape-style-1 :nth-child(3) {
+  top: 20%;
+  right: 10%;
+  background: hsl(0deg 0% 100% / 30%);
+}
+
+.section-shaped .shape-style-1 :nth-child(4) {
+  top: 30%;
+  right: 70%;
+  background: hsl(0deg 0% 100% / 15%);
+}
+
+.section-shaped .shape-style-1 :nth-child(5) {
+  top: 38%;
+  left: 1%;
+  right: auto;
+  background: hsl(0deg 0% 100% / 5%);
+}
+
+.section-shaped .shape-style-1 :nth-child(6) {
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 10%;
+  right: auto;
+  background: hsl(0deg 0% 100% / 15%);
+}
+
+.section-shaped .shape-style-1 :nth-child(7) {
+  bottom: 50%;
+  right: 36%;
+  background: hsl(0deg 0% 100% / 4%);
+}
+
+.section-shaped .shape-style-1 span {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.section-shaped .shape span {
+  position: absolute;
+}
+
+.card-shadow {
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%) !important;
+}

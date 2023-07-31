@@ -1,0 +1,41 @@
+.json-devider {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $json-devider;
+  }
+}
+
+.json-border {
+  border-right: 1px solid $json-devider;
+}
+
+.json-property {
+  color: $json-props;
+}
+
+.json-brace {
+  color: $json-brace;
+}
+
+.json-string {
+  color: $json-string;
+}
+
+.json-null {
+  color: $json-null;
+}
+
+.json-number {
+  color: $json-number;
+}
+
+.json-boolean {
+  color: $json-boolean;
+}
