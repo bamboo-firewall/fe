@@ -1,0 +1,17 @@
+.ant-btn {
+  justify-content: center;
+  display: inline-flex;
+  column-gap: 0.4rem;
+  align-items: center;
+  padding: 0.57rem 0.85rem;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ant-btn-primary {
+  box-shadow: none;
+}
