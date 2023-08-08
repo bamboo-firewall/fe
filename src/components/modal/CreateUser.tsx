@@ -36,6 +36,14 @@ export const CreateUser: React.FC<Props> = ({ refetchUser, onClose }) => {
       </Form.Item>
 
       <Form.Item
+        label="Username"
+        name="username"
+        rules={[{ required: true, message: 'Please input your username!' }]}
+      >
+        <Input />
+      </Form.Item>
+
+      <Form.Item
         label="Password"
         name="password"
         rules={[{ required: true, message: 'Please input your password!' }]}
@@ -47,6 +55,7 @@ export const CreateUser: React.FC<Props> = ({ refetchUser, onClose }) => {
         <Radio.Group>
           <Radio value="admin"> Admin </Radio>
           <Radio value="user"> User </Radio>
+          <Radio value="devops"> DevOps </Radio>
         </Radio.Group>
       </Form.Item>
 

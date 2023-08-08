@@ -29,8 +29,8 @@ const Login = () => {
         </div>
         <div className="w-full">
           <Form initialValues={{ remember: true }} onFinish={onFinish} autoComplete="off">
-            <Form.Item name="email" rules={[{ required: true, message: 'Email is required!' }]}>
-              <Input placeholder="Email" />
+            <Form.Item name="username" rules={[{ required: true, message: 'Username is required!' }]}>
+              <Input placeholder="Username" />
             </Form.Item>
             <Form.Item name="password" rules={[{ required: true, message: 'Password is required!' }]}>
               <Input.Password placeholder="Password" />
