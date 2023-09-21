@@ -29,7 +29,9 @@ const AppProvider: React.FC<Props> = ({ children }) => {
       const res: APIResponse<IContextValue['userInfo']> = await BambooService.getUserInfo();
       if (res?.error) return null;
       message.success(`Welcome back, ${res?.data?.name}`);
-      return res?.data;
+
+      const role = res?.data?.role ?? 'user';
+      return { ...res?.data, role: role.toLowerCase() as IUser['role'] };
     },
     {
       staleTime: Infinity,
